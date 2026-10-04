@@ -1,0 +1,5 @@
+{
+  "tiles": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+  "search": "https://photon.komoot.io/api/",
+  "nearby": "https://overpass-api.de/api/interpreter"
+}

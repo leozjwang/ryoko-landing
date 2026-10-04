@@ -1,0 +1,103 @@
+---
+import '../styles/global.css';
+import AppPreview from '../components/AppPreview.astro';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The right words, before you need them. Ryoko helps you find your next stop, show what you want to say, and understand the reply." />
+    <meta name="theme-color" content="#fcfbf8" />
+    <meta property="og:title" content="Ryoko — a little more local" />
+    <meta property="og:description" content="Find your next stop. Know what to say. Meet your local friend, Mimo." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/assets/mimo.svg" />
+    <title>Ryoko — a little more local</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header shell">
+      <a class="wordmark" href="#" aria-label="Ryoko home"><img src="/assets/mimo.svg" width="39" height="39" alt="" />ryoko<span class="wordmark-period">.</span></a>
+      <nav aria-label="Main navigation"><a href="#app-features">Inside the app</a><a href="#mimo">Meet Mimo</a><a href="#details">The little details</a></nav>
+      <button class="button button-small" data-open-app>Explore the app</button>
+    </header>
+    <main id="main">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="tiny-line"></span>A local friend in your pocket</span>
+          <h1 id="hero-title">Find your place.<br /><span>Find your<br />words.</span></h1>
+          <p class="hero-description">A real map. The right words. A local friend.<br class="desktop-break" /> From your next stop to your next conversation, Ryoko comes along.</p>
+          <div class="hero-actions"><button class="button" data-open-app>Explore the app <span class="play-mark" aria-hidden="true">▷</span></button><a class="text-link" href="#how-it-works">Take a look around</a></div>
+          <div class="hero-footnote"><span class="iphone-mark" aria-hidden="true"></span>Made for iPhone <span class="dot-divider">·</span> Starting with China & Japan</div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-wash" aria-hidden="true"></div>
+          <AppPreview />
+        </div>
+      </section>
+      <div class="promise-strip shell"><span>Less lost in translation.</span><span>More found along the way.</span><span lang="ja">旅を、もっと身近に。</span></div>
+
+      <section class="native-features shell" id="app-features" aria-labelledby="app-features-title">
+        <div class="section-heading"><div><span class="eyebrow">One place to begin</span><h2 id="app-features-title">Start with where you are.<br />See where it takes you.</h2></div><p>Explore the map, then tap through the tabs.<br />The little details follow you along.</p></div>
+        <div class="native-feature-grid"><article><span class="feature-index">01 / MAP</span><h3>The world, within reach.</h3><p>Pan around a real map. Search a place, filter food and washrooms, and open the details. Turn on location to follow along as you move.</p><button data-feature-tab="map">Explore the live map</button></article><article><span class="feature-index">02 / NEARBY</span><h3>Arrive with the words.</h3><p>Your place, local phrases and a reason for each suggestion. Preview a different time, or open a phrase and flip it across the counter.</p><button data-feature-tab="nearby">Try Nearby</button></article><article><span class="feature-index">03 / TRANSLATE</span><h3>A conversation, face to face.</h3><p>Two languages, two sides of the phone. Try the app’s split-screen layout with a sample conversation, then turn it toward the other person.</p><button data-feature-tab="translate">Try face to face</button></article></div>
+      </section>
+
+      <section class="how section shell" id="how-it-works" aria-labelledby="how-title">
+        <div class="section-heading"><div><span class="eyebrow">A day with Ryoko</span><h2 id="how-title">Big adventures.<br />Small, everyday moments.</h2></div><p>The best part of a trip can be an unplanned stop.<br />Feel a little more at home when you get there.</p></div>
+        <div class="moments">
+          <button class="moment" data-demo="0"><span class="step-number">01 / FIND YOUR MOMENT</span><div class="moment-art find-art"><div class="place-preview"><span>YOUR NEXT STOP</span><strong>Afternoon tea</strong><div class="tag-row"><span>Less sweet</span><span>A quiet break</span></div><p>A place that fits your afternoon.</p><img src="/assets/mimo.svg" width="48" height="48" alt="" /></div></div><h3>A place that feels like you.</h3><p>Find nearby places with Mimo, or look ahead to somewhere you’re planning to go.</p><span class="moment-action">Explore a place</span></button>
+          <button class="moment" data-demo="1"><span class="step-number">02 / HAVE THE WORDS</span><div class="moment-art show-art"><div class="show-preview"><span lang="zh-Hans">少糖，去冰</span><p>Less sugar, no ice.</p><small>Ready to show.</small></div></div><h3>Show it. Be understood.</h3><p>Your words, in the local language. Open a full-screen card and turn it toward the other person.</p><span class="moment-action">Try a phrase card</span></button>
+          <button class="moment" data-demo="2"><span class="step-number">03 / KEEP IT GOING</span><div class="moment-art translate-art"><div class="speech-bubble theirs"><span lang="zh-Hans">需要袋子吗？</span><small>Would you like a bag?</small></div><div class="speech-bubble yours"><span>No, thank you.</span><small lang="zh-Hans">不用，谢谢。</small></div><span class="conversation-label">English ⇄ Chinese</span></div><h3>A conversation, both ways.</h3><p>When they reply, Translate helps you follow along. Turn the phone for a face-to-face conversation.</p><span class="moment-action">See a conversation</span></button>
+        </div>
+      </section>
+
+      <section class="travel shell" aria-label="Explore with confidence"><div class="travel-photo"><img src="/assets/tokyo-street.jpg" alt="Sunlight along a quiet neighborhood street in Tokyo, with small shops and overhead wires" loading="lazy" width="1800" height="1200" /><div class="photo-shade"></div><div class="travel-copy"><span class="eyebrow">Make room for the unplanned</span><h2>Take the side street.</h2><p>The little café. The handwritten menu.<br />The conversation you almost didn’t start.</p></div><span class="photo-location">TOKYO, JAPAN <span>35.68° N · 139.76° E</span></span></div></section>
+
+      <section class="mimo section shell" id="mimo" aria-labelledby="mimo-title"><div class="mimo-stage"><span class="mimo-stage-label">SAY HELLO TO YOUR LOCAL FRIEND</span><object id="mimo-motion" data="/assets/ryoko-to-mimo.svg" type="image/svg+xml" aria-label="Ryoko transforms into Mimo"><img src="/assets/mimo.svg" alt="Mimo, a friendly pebble-shaped character with two eyes" /></object><button class="replay" id="replay-mimo">Replay hello <span aria-hidden="true">↻</span></button><div class="mimo-stage-caption">A familiar face in an unfamiliar place.</div></div><div class="mimo-copy"><span class="eyebrow">Meet Mimo</span><h2 id="mimo-title">A local friend.<br />With you for<br /><span class="soft-text">the little things.</span></h2><p>What should I order? How do I ask for that? Where should we go next?</p><p>Mimo helps with the questions that come up along the way. A few useful words, a nearby find, or a plan for your afternoon.</p><div class="mimo-question">“How do I ask for less ice?”</div><div class="mimo-answer"><img src="/assets/mimo.svg" alt="" width="36" height="36" /><p><span lang="zh-Hans">少冰</span><span>A little less ice. A little more confidence.</span></p></div></div></section>
+
+      <section class="details section shell" id="details" aria-labelledby="details-title"><div class="section-heading"><div><span class="eyebrow">Thoughtful by nature</span><h2 id="details-title">It’s in the little details.</h2></div></div><div class="detail-grid"><article><span class="detail-index">01</span><h3>Your taste, remembered.</h3><p>Your preferences shape the suggestions. A short “because…” tells you why.</p></article><article><span class="detail-index">02</span><h3>Important words, clearly.</h3><p>Allergy cards help explain your allergies in the local language, with your language underneath.</p></article><article><span class="detail-index">03</span><h3>A little look ahead.</h3><p>Preview a place and time before you go, from tomorrow’s café to tonight’s dinner.</p></article></div></section>
+
+      <section class="closing shell"><img src="/assets/mimo.svg" width="86" height="86" alt="" /><span class="eyebrow">Ryoko · 旅</span><h2>A little more local.<br />Wherever you go.</h2><button class="button" data-open-app>Explore the app</button><span class="closing-note">An iPhone travel companion. Built at StormHack 2026.</span></section>
+    </main>
+    <footer class="footer shell"><a class="wordmark" href="#">ryoko.</a><p>Find your place. Find your words.</p><div><a href="https://github.com/DanielOu1208/stormhack26" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://unsplash.com/photos/people-walk-down-a-quiet-street-in-japan-MvrOfWJ8HrY" target="_blank" rel="noopener noreferrer">Photo: Patrick Beznoska</a><a href="/assets/THIRD_PARTY_NOTICES.md">Avatar credits</a></div></footer>
+
+    <dialog id="demo" aria-labelledby="demo-title"><div class="demo-top"><span class="eyebrow">A travel moment · interactive example</span><button class="close" aria-label="Close preview">×</button></div><h2 id="demo-title">A tea stop in Shanghai.</h2><div class="demo-tabs" role="tablist" aria-label="Travel moment"><button id="step-tab-0" role="tab" aria-controls="step-0" aria-selected="true" data-step="0">1. Find</button><button id="step-tab-1" role="tab" aria-controls="step-1" aria-selected="false" tabindex="-1" data-step="1">2. Show</button><button id="step-tab-2" role="tab" aria-controls="step-2" aria-selected="false" tabindex="-1" data-step="2">3. Translate</button></div>
+      <section class="demo-panel" id="step-0" role="tabpanel" aria-labelledby="step-tab-0"><div class="demo-place"><img src="/assets/mimo.svg" width="70" height="70" alt="" /><span class="eyebrow">3:00 PM · Shanghai</span><h3>Time for a tea break.</h3><p>You like fruit tea, less sweet. Ryoko brings the words you need to the counter.</p><div class="tag-row"><span>Fruit tea</span><span>Less sugar</span><span>No ice</span></div></div><button class="button" data-next="1">See your phrase</button></section>
+      <section class="demo-panel" id="step-1" role="tabpanel" aria-labelledby="step-tab-1" hidden><div class="demo-show" id="show-card"><span lang="zh-Hans">少糖，去冰</span><p>Shǎo táng, qù bīng</p><strong>Less sugar, no ice.</strong></div><div class="demo-button-row"><button class="button button-outline" id="flip-card" aria-pressed="false">Flip card</button><button class="button" data-next="2">See their reply</button></div></section>
+      <section class="demo-panel" id="step-2" role="tabpanel" aria-labelledby="step-tab-2" hidden><div class="demo-conversation"><span class="eyebrow">Sample conversation · English ⇄ Chinese</span><div class="speech-bubble theirs"><span lang="zh-Hans">需要袋子吗？</span><small>Would you like a bag?</small></div><div class="speech-bubble yours"><span>No, thank you.</span><small lang="zh-Hans">不用，谢谢。</small></div></div><p class="demo-context">Ryoko’s Translate tab handles both sides of the conversation on your phone.</p><button class="button" data-next="0">Try it again</button></section>
+    </dialog>
+    <script>
+      const dialog = document.querySelector<HTMLDialogElement>('#demo')!;
+      const tabs = [...document.querySelectorAll<HTMLButtonElement>('[data-step]')];
+      const panels = [...document.querySelectorAll<HTMLElement>('.demo-panel')];
+      const flip = document.querySelector<HTMLButtonElement>('#flip-card')!;
+      const showCard = document.querySelector<HTMLElement>('#show-card')!;
+      function setStep(step: number, focus = false) {
+        tabs.forEach((tab, i) => { tab.setAttribute('aria-selected', String(i === step)); tab.tabIndex = i === step ? 0 : -1; });
+        panels.forEach((panel, i) => { panel.hidden = i !== step; });
+        showCard.classList.remove('flipped'); flip.setAttribute('aria-pressed', 'false');
+        if (focus) tabs[step].focus();
+      }
+      document.querySelectorAll<HTMLButtonElement>('[data-demo]').forEach(button => button.addEventListener('click', () => { setStep(Number(button.dataset.demo)); dialog.showModal(); document.body.classList.add('modal-open'); }));
+      document.querySelectorAll<HTMLButtonElement>('[data-next]').forEach(button => button.addEventListener('click', () => setStep(Number(button.dataset.next), true)));
+      tabs.forEach((tab, i) => { tab.addEventListener('click', () => setStep(i)); tab.addEventListener('keydown', event => { let target: number | undefined; if (event.key === 'ArrowRight') target = (i + 1) % 3; if (event.key === 'ArrowLeft') target = (i + 2) % 3; if (event.key === 'Home') target = 0; if (event.key === 'End') target = 2; if (target !== undefined) { event.preventDefault(); setStep(target, true); } }); });
+      dialog.querySelector<HTMLButtonElement>('.close')!.addEventListener('click', () => dialog.close());
+      dialog.addEventListener('close', () => document.body.classList.remove('modal-open'));
+      dialog.addEventListener('click', event => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
+      flip.addEventListener('click', () => { const active = showCard.classList.toggle('flipped'); flip.setAttribute('aria-pressed', String(active)); });
+      const motion = document.querySelector<HTMLObjectElement>('#mimo-motion')!;
+      const replay = document.querySelector<HTMLButtonElement>('#replay-mimo')!;
+      const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+      let hasPlayed = false;
+      const innerSVG = () => motion.contentDocument?.querySelector('svg');
+      const freeze = () => { const svg = innerSVG(); if (svg) { svg.pauseAnimations(); svg.setCurrentTime(1.5); } };
+      motion.addEventListener('load', () => { const svg = innerSVG(); if (!svg) return; svg.pauseAnimations(); svg.setCurrentTime(reduced.matches ? 1.5 : 0); if (hasPlayed && !reduced.matches) svg.unpauseAnimations(); });
+      const observer = new IntersectionObserver(entries => { if (entries[0].isIntersecting && !hasPlayed) { hasPlayed = true; if (reduced.matches) freeze(); else { const svg = innerSVG(); svg?.setCurrentTime(0); svg?.unpauseAnimations(); } } }, { threshold: 0.4 });
+      observer.observe(motion);
+      replay.addEventListener('click', () => { if (reduced.matches) { freeze(); return; } const svg = innerSVG(); svg?.setCurrentTime(0); svg?.unpauseAnimations(); });
+      reduced.addEventListener('change', () => { if (reduced.matches) freeze(); replay.hidden = reduced.matches; });
+      replay.hidden = reduced.matches;
+    </script>
+  </body>
+</html>
